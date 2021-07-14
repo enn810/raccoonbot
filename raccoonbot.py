@@ -8,14 +8,15 @@ import yfinance
 import math
 import time
 
+
 help_command = commands.DefaultHelpCommand(no_category = 'Commands')
 client = commands.Bot(command_prefix = '!', help_command=help_command)
-raccoon_status = cycle(["Inside Garbage Can", "With a Stick", "On the Pile of Garbage", "With Garbage Can", "In the Landfill"])
 
+raccoon_status = cycle(["Inside a Garbage Can", "With a Stick", "On a Pile of Garbage", "With a Garbage Can", "In the Landfill"])
 
 serveropened = open('server.json', 'r')
 data = json.loads(serveropened.read())
-#await ctx.send(data)
+
 
 
 '''
@@ -69,6 +70,7 @@ async def set(ctx, designator: str):
         keysArray.append(key)
 
     await ctx.send(f"Supported designators are: {keysArray}")
+
 
 
 #List Emojis
