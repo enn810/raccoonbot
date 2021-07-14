@@ -1,4 +1,2 @@
 yfinance
 discord.py
-discord.ext
-math
