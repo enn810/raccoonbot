@@ -1,3 +1,5 @@
 .env
 Discord Bot Ideas.txt
 Procfile
+server.json
+.gitignore
