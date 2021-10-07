@@ -1,1 +1,1 @@
-worker: python raccoonboy.py
+worker: python raccoonbot.py

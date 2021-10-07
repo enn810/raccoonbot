@@ -8,7 +8,6 @@ import yfinance
 import math
 import time
 
-
 help_command = commands.DefaultHelpCommand(no_category = 'Commands')
 client = commands.Bot(command_prefix = '!', help_command=help_command)
 
@@ -269,7 +268,6 @@ Error Handling
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         await ctx.send("This command does not exist. Please try again")
-
 
 
 
